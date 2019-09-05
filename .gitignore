@@ -1,0 +1,10 @@
+*.class
+
+target
+
+# Log files
+/log
+
+# Editor directories and files
+.idea
+*.iml
