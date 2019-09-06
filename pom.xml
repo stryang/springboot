@@ -13,7 +13,6 @@
         <module>spring-mq</module>
         <module>spring-websocket</module>
         <module>spring-cache</module>
-        <module>test</module>
     </modules>
 
 </project>
