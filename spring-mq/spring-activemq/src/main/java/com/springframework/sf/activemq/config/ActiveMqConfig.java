@@ -1,4 +1,4 @@
-package com.springframework.sf.mq.activeMq;
+package com.springframework.sf.activemq.config;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.springframework.beans.factory.annotation.Value;

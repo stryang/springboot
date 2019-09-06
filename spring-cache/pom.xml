@@ -9,11 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-mq</artifactId>
+    <artifactId>spring-cache</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-activemq</module>
-        <module>spring-rabbitmq</module>
+        <module>spring-redis</module>
     </modules>
 
 </project>

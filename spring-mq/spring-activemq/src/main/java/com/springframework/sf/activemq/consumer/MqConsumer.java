@@ -1,4 +1,4 @@
-package com.springframework.sf.mq.activeMq;
+package com.springframework.sf.activemq.consumer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;

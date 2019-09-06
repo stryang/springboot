@@ -1,0 +1,10 @@
+server:
+  port: 8004
+
+spring:
+  application:
+    name: sf-cache
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379

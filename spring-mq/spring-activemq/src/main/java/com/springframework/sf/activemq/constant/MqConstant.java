@@ -1,4 +1,4 @@
-package com.springframework.sf.mq.constants;
+package com.springframework.sf.activemq.constant;
 
 /**
  * @author yq
