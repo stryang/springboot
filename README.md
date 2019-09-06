@@ -12,7 +12,12 @@ SpringBoot 2.0 + Mybatis + Spring Security 5.0
 ```
 SpringBoot 2.0 + activemq
 ```
-1、整合activemq实现消息发送与订阅
+整合activemq实现消息发送与订阅
+#### 2、spring-rabbitmq
+```
+SpringBoot 2.0 + rabbitmq
+```
+整合rabbitmq
 ### spring-websocket
 ```
 SpringBoot 2.0 + websocket
@@ -23,4 +28,4 @@ SpringBoot 2.0 + websocket
 ```
 SpringBoot 2.0 + redis
 ```
-1、整合redis
+整合redis
