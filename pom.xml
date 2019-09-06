@@ -11,6 +11,7 @@
     <modules>
         <module>spring-security</module>
         <module>spring-mq</module>
+        <module>spring-websocket</module>
     </modules>
 
 </project>
