@@ -1,0 +1,10 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: sf-security-oauth
+
+#security:
+#  basic:
+#    enable : true

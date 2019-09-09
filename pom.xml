@@ -13,6 +13,7 @@
         <module>spring-mq</module>
         <module>spring-websocket</module>
         <module>spring-cache</module>
+        <module>spring-security-oauth2</module>
     </modules>
 
 </project>

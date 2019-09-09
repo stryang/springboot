@@ -4,16 +4,15 @@
 ```
 SpringBoot 2.0 + Mybatis + Spring Security 5.0
 ```
-1、登录认证
-2、权限认证
+登录认证、权限认证
 
 ### spring-mq
-#### 1、spring-activemq
+#### spring-activemq
 ```
 SpringBoot 2.0 + activemq
 ```
-整合activemq实现消息发送与订阅
-#### 2、spring-rabbitmq
+整合activemq
+#### spring-rabbitmq
 ```
 SpringBoot 2.0 + rabbitmq
 ```
@@ -22,10 +21,15 @@ SpringBoot 2.0 + rabbitmq
 ```
 SpringBoot 2.0 + websocket
 ```
-1、通过websocket实现与页面实时消息推送
+整合websocket
 ### spring-cache
-#### 1、spring-redis
+#### spring-redis
 ```
 SpringBoot 2.0 + redis
 ```
 整合redis
+### spring-security-oauth2
+```
+SpringBoot 2.0 + spring-security-oauth2
+```
+整合spring-security-oauth2
