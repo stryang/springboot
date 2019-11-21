@@ -17,6 +17,7 @@
         <module>spring-swagger</module>
         <module>spring-aop</module>
         <module>spring-schedule</module>
+        <module>spring-hibernate</module>
     </modules>
 
 </project>

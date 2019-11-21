@@ -7,6 +7,7 @@
     ├── spring-aop
     ├── spring-cache
     │   └── spring-redis
+    ├── spring-hibernate
     ├── spring-mq
     │   ├── spring-activemq
     │   └── spring-rabbitmq
