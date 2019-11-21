@@ -1,35 +1,26 @@
 # springframework
-
-### spring-security
+    基于springboot2.0整合常用模块，提供整合例子避免踩坑，持续更新中。。。
+    
+### 项目结构
 ```
-SpringBoot 2.0 + Mybatis + Spring Security 5.0
+└── springboot
+    ├── spring-cache
+    │   └── spring-redis
+    ├── spring-mq
+    │   ├── spring-activemq
+    │   └── spring-rabbitmq
+    ├── spring-security
+    ├── spring-security-oauth2
+    ├── spring-swagger
+    ├── spring-websocket
+    └── sql
 ```
-登录认证、权限认证
-
-### spring-mq
-#### spring-activemq
-```
-SpringBoot 2.0 + activemq
-```
-整合activemq
-#### spring-rabbitmq
-```
-SpringBoot 2.0 + rabbitmq
-```
-整合rabbitmq
-### spring-websocket
-```
-SpringBoot 2.0 + websocket
-```
-整合websocket
-### spring-cache
-#### spring-redis
-```
-SpringBoot 2.0 + redis
-```
-整合redis
-### spring-security-oauth2
-```
-SpringBoot 2.0 + spring-security-oauth2
-```
-整合spring-security-oauth2
+### 依赖环境
+|  软件/插件  | 版本  |
+|  ----  | ----  |
+| JDK    | 1.8以上 |
+| maven  | 3.0以上 |
+| acitvemq |  |
+| rabbitmq |  |
+| redis  |  |
+| lombok |  |
