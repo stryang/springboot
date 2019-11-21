@@ -22,6 +22,7 @@
         <module>spring-mybatisplus</module>
         <module>spring-file</module>
         <module>spring-dubbo</module>
+        <module>spring-shiro</module>
     </modules>
 
 </project>

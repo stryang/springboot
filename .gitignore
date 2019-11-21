@@ -8,3 +8,5 @@ target
 # Editor directories and files
 .idea
 *.iml
+
+*.log
