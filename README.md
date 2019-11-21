@@ -10,6 +10,11 @@
     ├── spring-aop
     ├── spring-cache
     │   └── spring-redis
+    ├── spring-dubbo
+    │   ├── dubbo-admin
+    │   ├── spring-dubbo-api
+    │   ├── spring-dubbo-consumer
+    │   └── spring-dubbo-provider
     ├── spring-file
     ├── spring-hibernate
     ├── spring-mq
@@ -32,6 +37,7 @@
 | rabbitmq |  |
 | redis  |  |
 | lombok |  |
+| zookeeper |  |
 
 ### 说明
 ```

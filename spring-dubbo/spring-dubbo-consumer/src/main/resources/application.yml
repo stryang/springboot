@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+#spring:
+#  dubbo:
+#    application:
+#      name: spring-dubbo-consumer
+#    registry: zookeeper://strongyang.com:2181
+
+dubbo:
+  application:
+    #应用名称，每个dubbo应用的名称都是唯一的
+    name: spring-dubbo-consumer
+  registry:
+    #注册中心
+    address: zookeeper://strongyang.com:2181
+

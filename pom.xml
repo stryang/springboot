@@ -21,6 +21,7 @@
         <module>spring-admin</module>
         <module>spring-mybatisplus</module>
         <module>spring-file</module>
+        <module>spring-dubbo</module>
     </modules>
 
 </project>
