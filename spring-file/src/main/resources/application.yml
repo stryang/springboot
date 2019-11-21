@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring:
+  fileLocation: D:/spring-file
+  servlet:
+    multipart:
+      maxFileSize: 100MB
+      maxRequestSize: 100MB

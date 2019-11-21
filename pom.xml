@@ -20,6 +20,7 @@
         <module>spring-hibernate</module>
         <module>spring-admin</module>
         <module>spring-mybatisplus</module>
+        <module>spring-file</module>
     </modules>
 
 </project>

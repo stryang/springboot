@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传例子</title>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-datetimepicker.min.js"></script>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<div class="modal-dialog" style="margin-top: 10%;width: 400px">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title text-center" id="myModalLabel">文件上传</h3>
+        </div>
+        <div class="modal-body" id="model-body">
+            <div class="body-file">
+                <input type="file" id="file">
+            </div>
+            <div class="body-file-btn">
+                <button type="button" id="file-btn" class="btn btn-default">开始上传</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#file-btn').on('click', function() {
+        var file = $('#file')[0].files[0];
+        if(file) {
+            var formData = new FormData();
+            formData.append('file', file)
+            $.ajax({
+                type: "post",
+                url: "/file/upload",
+                contentType: false,
+                processData: false,
+                data: formData,
+                dataType: 'json',
+                success: function(data) {
+                    if(data) {
+                        alert('上传成功！')
+                    } else {
+                        alert('上传失败！')
+                    }
+                },
+                error: function(data) {
+                    alert('上传异常！')
+                }
+            });
+        } else {
+            alert('请先选择需要的上传文件！')
+        }
+    })
+    $("#file").change(function(){
+
+    });
+</script>
+</body>
+</html>
