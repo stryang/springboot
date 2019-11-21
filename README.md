@@ -10,6 +10,7 @@
     ├── spring-mq
     │   ├── spring-activemq
     │   └── spring-rabbitmq
+    ├── spring-schedule
     ├── spring-security
     ├── spring-security-oauth2
     ├── spring-swagger

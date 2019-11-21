@@ -16,6 +16,7 @@
         <module>spring-security-oauth2</module>
         <module>spring-swagger</module>
         <module>spring-aop</module>
+        <module>spring-schedule</module>
     </modules>
 
 </project>
