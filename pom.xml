@@ -19,6 +19,7 @@
         <module>spring-schedule</module>
         <module>spring-hibernate</module>
         <module>spring-admin</module>
+        <module>spring-mybatisplus</module>
     </modules>
 
 </project>

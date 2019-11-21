@@ -1,0 +1,78 @@
+package ${package.Controller};
+import java.util.Map;
+import java.util.Date;
+
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import com.springframework.sf.mybatisplus.utils.R;
+import ${package.Entity}.${entity};
+import ${package.Service}.I${entity}Service;
+
+/**
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@RestController
+@RequestMapping("/${table.entityPath}")
+public class ${table.controllerName} {
+
+    @Autowired
+    private I${entity}Service i${entity}Service;
+
+    /**
+    * 通过ID查询
+    *
+    * @param id ID
+    * @return R
+    */
+    @GetMapping("/{id}")
+    public R get(@PathVariable("id") String id){
+        return R.ok(i${entity}Service.getById(id));
+    }
+
+
+    /**
+    * 分页查询信息
+    *
+    * @param page 分页对象
+    * @param ${table.entityPath} 实体
+    * @return 分页对象
+    */
+    @RequestMapping("/page")
+    public R page(Page page, ${entity} ${table.entityPath}){
+        return R.ok(i${entity}Service.page(page, Wrappers.query(${table.entityPath})));
+    }
+
+    /**
+    * 添加
+    * @param  ${table.entityPath} 实体
+    * @return
+    */
+    @PostMapping
+    public R save(@RequestBody ${entity} ${table.entityPath}){
+        return R.ok(i${entity}Service.save(${table.entityPath}));
+    }
+
+    /**
+    * 删除
+    * @param id ID
+    * @return R
+    */
+    @DeleteMapping("/{id}")
+    public R delete(@PathVariable String id){
+        return R.ok(i${entity}Service.removeById(id));
+    }
+
+    /**
+    * 修改
+    * @param  ${table.entityPath} 实体
+    * @return success/false
+    */
+    @PutMapping
+    public R<Boolean> edit(@RequestBody ${entity} ${table.entityPath}){
+        return R.ok(i${entity}Service.updateById(${table.entityPath}));
+    }
+}
