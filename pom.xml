@@ -15,6 +15,7 @@
         <module>spring-cache</module>
         <module>spring-security-oauth2</module>
         <module>spring-swagger</module>
+        <module>spring-aop</module>
     </modules>
 
 </project>
