@@ -4,6 +4,9 @@
 ### 项目结构
 ```
 └── springboot
+    ├── spring-admin
+    │   ├── spring-admin-client
+    │   └── spring-admin-server
     ├── spring-aop
     ├── spring-cache
     │   └── spring-redis

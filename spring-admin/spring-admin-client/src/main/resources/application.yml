@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+spring:
+  #springboot adminUi监控配置start
+  application:
+    name: spring-admin-client
+  boot:
+    admin:
+      client:
+        url: http://localhost:8081
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

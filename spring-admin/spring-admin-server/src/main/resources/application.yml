@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+spring:
+  #springboot adminUi监控配置start
+  application:
+    name: spring-admin-server
+  boot:
+    admin:
+      notify:
+        mail:
+          enabled: false  #关闭admin自带的邮件通知
+      monitor:
+        read-timeout: 200000
+      ui:
+        title: 服务监控
+  freemarker:
+    settings:
+      classic_compatible: true   #解决模板空指针问题
+  #springboot adminUi监控配置end
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

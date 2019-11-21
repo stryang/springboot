@@ -18,6 +18,7 @@
         <module>spring-aop</module>
         <module>spring-schedule</module>
         <module>spring-hibernate</module>
+        <module>spring-admin</module>
     </modules>
 
 </project>
