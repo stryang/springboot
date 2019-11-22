@@ -25,6 +25,7 @@
         <module>spring-shiro</module>
         <module>spring-config</module>
         <module>spring-mongodb</module>
+        <module>spring-async</module>
     </modules>
 
 </project>
