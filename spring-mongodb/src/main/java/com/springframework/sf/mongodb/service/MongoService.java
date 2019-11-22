@@ -17,15 +17,20 @@ import org.springframework.stereotype.Service;
 public class MongoService {
 
     @Autowired
-    private MongoTemplate springbootMongoTemplate;
+    private MongoTemplate mongoTemplate;
+    @Autowired
+    private UserRepository userRepository;
 
     /**
      * 创建对象
      */
     public boolean save(User user) {
-        if(springbootMongoTemplate.save(user) != null) {
-            return true;
-        }
+
+        userRepository.save(user);
+
+//        if(mongoTemplate.save(user) != null) {
+//            return true;
+//        }
         return false;
     }
 
@@ -35,7 +40,7 @@ public class MongoService {
      */
     public User findById(String id) {
         Query query = new Query(Criteria.where("id").is(id));
-        User mgt = springbootMongoTemplate.findOne(query , User.class);
+        User mgt = mongoTemplate.findOne(query , User.class);
         return mgt;
     }
 
@@ -45,7 +50,7 @@ public class MongoService {
      */
     public User findByName(String name) {
         Query query = new Query(Criteria.where("name").is(name));
-        User mgt = springbootMongoTemplate.findOne(query , User.class);
+        User mgt = mongoTemplate.findOne(query , User.class);
         return mgt;
     }
 
@@ -56,7 +61,7 @@ public class MongoService {
         Query query = new Query(Criteria.where("id").is(user.getId()));
         Update update= new Update().set("age", user.getAge()).set("name", user.getUsername());
         //更新查询返回结果集的第一条
-        return springbootMongoTemplate.updateFirst(query,update, User.class).wasAcknowledged();
+        return mongoTemplate.updateFirst(query,update, User.class).wasAcknowledged();
         //更新查询返回结果集的所有
         // mongoTemplate.updateMulti(query,update,TestEntity.class);
     }
@@ -67,6 +72,6 @@ public class MongoService {
      */
     public boolean deleteById(String id) {
         Query query = new Query(Criteria.where("id").is(id));
-        return springbootMongoTemplate.remove(query, User.class).wasAcknowledged();
+        return mongoTemplate.remove(query, User.class).wasAcknowledged();
     }
 }

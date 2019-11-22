@@ -15,7 +15,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 public class SpringBootTestMongoConfig extends AbstractMongoConfig {
 
     @Override
-    @Bean(name = "springbootMongoTemplate")
+    @Bean(name = "springbootTestMongoTemplate")
     public MongoTemplate getMongoTemplate() throws Exception {
         return new MongoTemplate(mongoDbFactory());
     }
