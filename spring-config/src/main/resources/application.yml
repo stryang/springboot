@@ -1,0 +1,28 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: dev
+---
+
+server:
+  port: 8081
+spring:
+  profiles: dev
+
+user:
+  username: stryang
+  password: 123456
+  age: 25
+
+---
+
+server:
+  port: 8082
+spring:
+  profiles: test
+
+user:
+  username: xiaoming
+  password: 123456
+  age: 22

@@ -23,6 +23,7 @@
         <module>spring-file</module>
         <module>spring-dubbo</module>
         <module>spring-shiro</module>
+        <module>spring-config</module>
     </modules>
 
 </project>

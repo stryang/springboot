@@ -10,6 +10,7 @@
     ├── spring-aop
     ├── spring-cache
     │   └── spring-redis
+    ├── spring-config
     ├── spring-dubbo
     │   ├── dubbo-admin
     │   ├── spring-dubbo-api
