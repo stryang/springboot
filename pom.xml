@@ -24,6 +24,7 @@
         <module>spring-dubbo</module>
         <module>spring-shiro</module>
         <module>spring-config</module>
+        <module>spring-mongodb</module>
     </modules>
 
 </project>

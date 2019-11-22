@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: sf-mongodb
+  data:
+    mongodb:
+      spring-boot:
+        host: 192.168.4.5
+        database: locationdb
+        port: 27017
+        username: root
+        password: xgcoolfare!QAZ
+      spring-boot-test:
+        host: localhost
+        database: spring_boot_test
+        port: 27017
+        username: root
+        password: 123456

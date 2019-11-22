@@ -18,6 +18,7 @@
     │   └── spring-dubbo-provider
     ├── spring-file
     ├── spring-hibernate
+    ├── spring-mongodb
     ├── spring-mq
     │   ├── spring-activemq
     │   └── spring-rabbitmq
