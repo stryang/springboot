@@ -8,6 +8,7 @@
     │   ├── spring-admin-client
     │   └── spring-admin-server
     ├── spring-aop
+    ├── spring-async
     ├── spring-cache
     │   └── spring-redis
     ├── spring-config
