@@ -26,6 +26,7 @@
         <module>spring-config</module>
         <module>spring-mongodb</module>
         <module>spring-async</module>
+        <module>spring-dynamic-datasource</module>
     </modules>
 
 </project>
