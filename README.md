@@ -17,6 +17,7 @@
     │   ├── spring-dubbo-api
     │   ├── spring-dubbo-consumer
     │   └── spring-dubbo-provider
+    ├── spring-dynamic-datasource
     ├── spring-file
     ├── spring-hibernate
     ├── spring-mongodb
