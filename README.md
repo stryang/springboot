@@ -23,6 +23,7 @@
     ├── spring-mongodb
     ├── spring-mq
     │   ├── spring-activemq
+    │   ├── spring-kafka
     │   └── spring-rabbitmq
     ├── spring-mybatisplus
     ├── spring-schedule
