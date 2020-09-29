@@ -1,5 +1,5 @@
 # springframework
-    基于springboot2.0整合常用模块，提供整合例子避免踩坑，持续更新中。。。
+    基于springboot2.0整合常用模块，提供整合例子避免踩坑
     
 ### 项目结构
 ```
@@ -31,6 +31,7 @@
     ├── spring-security-oauth2
     ├── spring-shiro
     ├── spring-swagger
+    ├── spring-validated
     ├── spring-websocket
     └── sql
 ```

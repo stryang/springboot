@@ -12,5 +12,10 @@
     <artifactId>spring-dubbo-api</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
+    <!-- 我是最新的jdk所以写的是10 根据你自己的jdk版本写 1.7/1.8~~~~ -->
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+</properties>
 </project>
